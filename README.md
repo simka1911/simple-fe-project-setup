@@ -1,5 +1,5 @@
 # Simple FE Project Setup
-A step by step tutorial on how to create and setup a simple frontend project. Only simple, basic and necessary stuff will be covered here, and the project itself can later be expanded and explored in more detail. Before starting with guidelines, create a project directory.
+A step by step tutorial on how to create and setup a simple frontend project. Only simple, basic and necessary stuff will be covered here, and the project itself can later be expanded and explored in more detail. Before starting with guidelines, create a project directory for your project on your machine.
 ## Guidelines
 ### npm
 #### About:
@@ -19,7 +19,7 @@ First we want to create package.json file, since we will be using existing packa
 - **dependencies** - packages our project depends on; required to run our application,
 - **devDependencies** - same as dependencies, but needed only during development.
 
-We will keep closer look on scripts, dependencies and devDependencies during this setup.
+We will keep a closer look on scripts, dependencies and devDependencies during this setup.
 
 ### Git
 bla
