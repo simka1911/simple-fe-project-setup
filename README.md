@@ -2,11 +2,11 @@
 A step by step tutorial on how to create and setup a simple frontend project. Only simple, basic and necessary stuff will be covered here, and the project itself can later be expanded and explored in more detail. Before starting with guidelines, create a project directory.
 ## Guidelines
 ### npm
-#### about:
+#### About:
 Node Package manager, or **npm**, is an online repository used by developers for publishing open-source Node.js projects. Node modules/libraries are grouped together into one package, which can be used by other packages or in other individual projects. For others to make use of those packages, npm also assists in package installation and version and dependency management. 
 To be able to use npm, Node needs to be installed first (https://nodejs.org/en/download/).
 
-#### actions:
+#### Actions:
 First we want to create package.json file, since we will be using existing packages in our project. Open up the terminal, go to the project directory (root directory), run the command ```npm init```, and answer the questions in command line. If you want to skip those questions, run instead ```npm init -y``` or ```npm init --yes```. After that our package.json file will get created and we will see our metadata there. Metadata properties are:
 - **name (mandatory)** - name of our project,
 - **version (mandatory)** - current version of our project,
