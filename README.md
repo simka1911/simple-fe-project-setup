@@ -28,6 +28,9 @@ After creating our package.json, the next best thing to do is include git. It is
 Run command in root of our project directory ```git init```. Now we are able to use git commands (https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html).
 Sometimes we don't want to track changes in all files. To tell git what files it should ignore when commiting, we need to create a **.gitignore** file. Do that with command ```touch .gitignore```. Inside of that file, add patterns (row by row) for files which should be ignored (for ex. *node_modules*, *\*.txt*, etc.) and then save changes. There is also a possibility to add global **.gitignore** file.
 ### Babel
-bla
+#### About:
+We want our code to be able to run in many different browsers, and some of those don't support newer version of our javascript code. So for us to be able to use newer javascript but still run the application in older browsers we should install **Babel**. Babel is a monorepo, which means that it includes multiple plugins which are NPM libraries on their own, so to use those libraries they must be installed as well. For our purposes we will need **@babel/preset-env** plugin, which will act like transpiler for our javascript code.
+#### Actions:
+First we need to install babel: ```npm install --save-dev @babel/core @babel/cli```. With ```--save-dev``` command we are placing our babel packages into devDependencies in our package.json. After babel install we also need to install our plugin: ```npm install --save-dev @babel/preset-env```.
 ### uglification and minification
 bla
