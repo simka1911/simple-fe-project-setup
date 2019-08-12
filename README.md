@@ -3,8 +3,8 @@ A step by step tutorial on how to create and setup a simple frontend project. On
 ## Guidelines
 ### npm
 #### About:
-Node Package manager, or **npm**, is an online repository used by developers for publishing open-source Node.js projects. Node modules/libraries are grouped together into one package, which can be used by other packages or in other individual projects. For others to make use of those packages, npm also assists in package installation and version and dependency management. 
-To be able to use npm, Node needs to be installed first (https://nodejs.org/en/download/).
+Node Package manager, or **npm**, is an online repository used by developers for publishing open-source Node.js projects. Node modules/libraries are grouped together into one package, which can be used by other packages or in other individual projects. For others to make use of those packages, **npm** also assists in package installation and version and dependency management. 
+To be able to use **npm**, Node needs to be installed first (https://nodejs.org/en/download/).
 
 #### Actions:
 First we want to create package.json file, since we will be using existing packages in our project. Open up the terminal, go to the project directory (root directory), run the command ```npm init```, and answer the questions in command line. If you want to skip those questions, run instead ```npm init -y``` or ```npm init --yes```. After that our package.json file will get created and we will see our metadata there. Metadata properties are:
@@ -22,7 +22,11 @@ First we want to create package.json file, since we will be using existing packa
 We will keep a closer look on scripts, dependencies and devDependencies during this setup.
 
 ### Git
-bla
+#### About:
+After creating our package.json, the next best thing to do is include git. It is the most famous version control system in the world, and will really make our work easier.
+#### Actions:
+Run command in root of our project directory ```git init```. Now we are able to use git commands (https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html).
+Sometimes we don't want to track changes in all files. To tell git what files it should ignore when commiting, we need to create a **.gitignore** file. Do that with command ```touch .gitignore```. Inside of that file, add patterns (row by row) for files which should be ignored (for ex. *node_modules*, *\*.txt*, etc.) and then save changes. There is also a possibility to add global **.gitignore** file.
 ### Babel
 bla
 ### uglification and minification
