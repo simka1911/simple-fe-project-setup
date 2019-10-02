@@ -1,5 +1,5 @@
 # Simple FE Project Setup
-A step by step tutorial on how to create and setup a simple frontend project. Only simple, basic and necessary stuff will be covered here, and the project itself can later be expanded and explored in more detail. Before starting with guidelines, create a project directory for your project on your machine.
+A step by step tutorial on how to create and setup a simple frontend project. Only simple, basic and necessary stuff will be covered here, and the project itself can later be expanded and explored in more detail. Before starting with guidelines, create a new project directory on your machine.
 ## Guidelines
 ### npm
 #### About:
