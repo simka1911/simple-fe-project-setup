@@ -1,0 +1,28 @@
+{
+  "name": "fesetup",
+  "version": "1.0.0",
+  "description": "Simple Frontend Project Setup",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "compile": "babel ./src/index.js",
+    "compile-save-babelrc": "babel src --out-dir dist",
+    "compile-save": "babel src --out-dir dist --presets=@babel/preset-env --no-babelrc",
+    "uglify": "uglifyjs ./dist/index.js -c -m --toplevel -o ./dist/index.min.js",
+    "compile-uglify": "npm run compile-save-babelrc && npm run uglify"
+  },
+  "keywords": [
+    "simple",
+    "frontend",
+    "project",
+    "setup"
+  ],
+  "author": "simka1911",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "uglify-js": "^3.6.0"
+  }
+}
