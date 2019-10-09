@@ -45,5 +45,8 @@ First we need to install babel: ```npm install --save-dev @babel/core @babel/cli
     ]
 }```. Now our previous command should work. With this command our code gets transpiled but not saved, so we need to make sure it is saved in our **dist** folder. So use command ```npx babel src --out-dir dist```, or write a npm script. All files from **src** folder will be transpiled and saved into **dist** folder. If for some reason you don't want to have .babelrc file, you can alter previous command like this and it will still work: ```npx babel src --out-dir dist --presets=@babel/preset-env --no-babelrc```.
 
-### uglification and minification
-bla
+### Uglification and minification
+#### About:
+To reduce the size of files and enable better performance, minification (minimizing code, removal of unnecessary characters) and uglification (making code almost unreadable, renaming with shorter names) are used. To be able to do both, we need to install **uglify-js**.
+#### Actions:
+To install uglify-js, use command ```npm install --save-dev uglify-js```. Basic usage of this package would be ```uglifyjs [input files] [options]```. Options used in our example are -c or --compress for compressing our code, -m or --mangle for for mangling names, --toplevel for compressing and mangling code from top level scope, and -o, for giving output path. Our command looks like this: ```npx uglifyjs ./dist/index.js -c -m --toplevel -o ./dist/index.min.js```.
